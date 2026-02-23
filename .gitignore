@@ -55,6 +55,7 @@ venv/
 
 .claude/settings.local.json
 .claude/skills/*.local/
+.claude/worktrees/
 AGENTS.md
 GEMINI.md
 spec/
