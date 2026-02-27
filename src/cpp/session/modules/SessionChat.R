@@ -349,7 +349,7 @@
             homeDir <- normalizePath("~", winslash = "/", mustWork = TRUE)
             if (identical(workDir, homeDir))
             {
-               msg <- "denied unlink(\"*\") on user home directory"
+               msg <- "denied agent from executing unlink(\"*\") on user home directory"
                stop(msg, call. = FALSE)
             }
          }
