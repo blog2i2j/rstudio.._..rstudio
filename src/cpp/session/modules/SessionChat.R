@@ -287,7 +287,7 @@
    if (all(ok))
       return(TRUE)
 
-   fmt <- "denied %s() on file %s"
+   fmt <- "denied agent from executing %s() on file %s"
    msg <- sprintf(fmt, action, paste(shQuote(path[!ok]), collapse = ", "))
    stop(msg, call. = FALSE)
 })
@@ -298,7 +298,7 @@
    if (all(ok))
       return(TRUE)
 
-   fmt <- "denied %s() on file %s"
+   fmt <- "denied agent from executing %s() on file %s"
    msg <- sprintf(fmt, action, paste(shQuote(path[!ok]), collapse = ", "))
    stop(msg, call. = FALSE)
 })
